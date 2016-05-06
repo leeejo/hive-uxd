@@ -26,6 +26,25 @@ gulp
 
 View the site at [http://localhost:3000](http://localhost:3000).
 
+## Deployment
+
+There are three npm scripts in package.json:
+```
+"start": "gulp",
+"build": "jekyll build --config _config_dev.yml",
+"deploy": "git subtree push --prefix _site origin gh-pages"
+```
+
+Make sure to build using the development config file _config_dev.yml:
+```
+npm run build
+```
+
+We'll push the build folder as a subtree onto the gh-pages branch
+```
+npm run deploy
+```
+
 ## Dev Environment
 ```
 Ruby 2.3.0
