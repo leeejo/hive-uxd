@@ -1,0 +1,54 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: UX Chapter
+email: edison_chee@ida.gov.sg
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: /hive-uxd # the subpath of your site, e.g. /blog
+url: https://edisonchee.github.io # the base hostname & protocol for your site
+twitter_username: edisonchee
+github_username:  edisonchee
+
+# Build settings
+markdown: kramdown
+
+# Exclude dev files
+exclude:
+  - package.json
+  - node_modules
+  - gulpfile.babel.js
+  - Gemfile
+  - Gemfile.lock
+
+# Collections
+collections:
+  case_studies:
+    output: true
+    permalink: /case_studies/:path/
+  methods:
+    output: true
+    permalink: /method/:title/
+  team:
+    output: true
+    permalink: /team/:path/
+
+# Frontmatter Defaults
+defaults:
+  - scope:
+      path: ""
+      type: methods
+    values:
+      layout: default
+  - scope:
+      path: ""
+      type: case_studies
+    values:
+      layout: default
