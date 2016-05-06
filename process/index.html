@@ -1,0 +1,99 @@
+---
+layout: default
+title: Process
+weight: 2
+---
+
+<h2>Research</h2>
+<div>
+  <h3>Understanding your clients</h3>
+  <div>
+  {% for method in site.methods %}
+    {% if method.type == 'research' and method.category == 'understanding your clients' %}
+      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+<div>
+  <h3>Understanding your users</h3>
+  <div>
+  {% for method in site.methods %}
+    {% if method.type == 'research' and method.category == 'understanding your users' %}
+      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+<div>
+  <h3>Understanding the business</h3>
+  <div>
+  {% for method in site.methods %}
+    {% if method.type == 'research' and method.category == 'understanding the business' %}
+      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+<h2>Design</h2>
+<div>
+  <h3>Quick n' Dirty</h3>
+  <div>
+  {% for method in site.methods %}
+    {% if method.type == 'design' and method.category == 'quick and dirty' %}
+      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+<div>
+  <h3>Information Architecture</h3>
+  <div>
+  {% for method in site.methods %}
+    {% if method.type == 'design' and method.category == 'information architecture' %}
+      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+<div>
+  <h3>Ideation</h3>
+  <div>
+  {% for method in site.methods %}
+    {% if method.type == 'design' and method.category == 'ideation' %}
+      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+<div>
+  <h3>Ideation</h3>
+  <div>
+  {% for method in site.methods %}
+    {% if method.type == 'design' and method.category == 'mock-ups' %}
+      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+<h2>Validate</h2>
+<div>
+  <h3>Qualitative</h3>
+  <div>
+  {% for method in site.methods %}
+    {% if method.type == 'validate' and method.category == 'qualitative' %}
+      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
+<div>
+  <h3>Quantitative</h3>
+  <div>
+  {% for method in site.methods %}
+    {% if method.type == 'validate' and method.category == 'quantitative' %}
+      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+    {% endif %}
+  {% endfor %}
+  </div>
+</div>
