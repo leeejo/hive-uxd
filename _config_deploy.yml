@@ -32,13 +32,13 @@ exclude:
 collections:
   case_studies:
     output: true
-    permalink: /hive-uxd/case_studies/:path/
+    permalink: /case_studies/:path/
   methods:
     output: true
-    permalink: /hive-uxd/method/:title/
+    permalink: /method/:title/
   team:
     output: true
-    permalink: /hive-uxd/team/:path/
+    permalink: /team/:path/
 
 # Frontmatter Defaults
 defaults:
