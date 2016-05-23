@@ -10,7 +10,7 @@ weight: 2
   <div>
   {% for method in site.methods %}
     {% if method.type == 'research' and method.category == 'understanding your clients' %}
-      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+      <a href="{{ site.baseurl }}{{ method.url }}" class="ux-method">{{ method.title }}</a>
     {% endif %}
   {% endfor %}
   </div>
@@ -20,7 +20,7 @@ weight: 2
   <div>
   {% for method in site.methods %}
     {% if method.type == 'research' and method.category == 'understanding your users' %}
-      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+      <a href="{{ site.baseurl }}{{ method.url }}" class="ux-method">{{ method.title }}</a>
     {% endif %}
   {% endfor %}
   </div>
@@ -30,7 +30,7 @@ weight: 2
   <div>
   {% for method in site.methods %}
     {% if method.type == 'research' and method.category == 'understanding the business' %}
-      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+      <a href="{{ site.baseurl }}{{ method.url }}" class="ux-method">{{ method.title }}</a>
     {% endif %}
   {% endfor %}
   </div>
@@ -41,7 +41,7 @@ weight: 2
   <div>
   {% for method in site.methods %}
     {% if method.type == 'design' and method.category == 'quick and dirty' %}
-      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+      <a href="{{ site.baseurl }}{{ method.url }}" class="ux-method">{{ method.title }}</a>
     {% endif %}
   {% endfor %}
   </div>
@@ -51,7 +51,7 @@ weight: 2
   <div>
   {% for method in site.methods %}
     {% if method.type == 'design' and method.category == 'information architecture' %}
-      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+      <a href="{{ site.baseurl }}{{ method.url }}" class="ux-method">{{ method.title }}</a>
     {% endif %}
   {% endfor %}
   </div>
@@ -61,7 +61,7 @@ weight: 2
   <div>
   {% for method in site.methods %}
     {% if method.type == 'design' and method.category == 'ideation' %}
-      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+      <a href="{{ site.baseurl }}{{ method.url }}" class="ux-method">{{ method.title }}</a>
     {% endif %}
   {% endfor %}
   </div>
@@ -71,7 +71,7 @@ weight: 2
   <div>
   {% for method in site.methods %}
     {% if method.type == 'design' and method.category == 'mock-ups' %}
-      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+      <a href="{{ site.baseurl }}{{ method.url }}" class="ux-method">{{ method.title }}</a>
     {% endif %}
   {% endfor %}
   </div>
@@ -82,7 +82,7 @@ weight: 2
   <div>
   {% for method in site.methods %}
     {% if method.type == 'validate' and method.category == 'qualitative' %}
-      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+      <a href="{{ site.baseurl }}{{ method.url }}" class="ux-method">{{ method.title }}</a>
     {% endif %}
   {% endfor %}
   </div>
@@ -92,7 +92,7 @@ weight: 2
   <div>
   {% for method in site.methods %}
     {% if method.type == 'validate' and method.category == 'quantitative' %}
-      <a href="{{ method.url }}" class="ux-method">{{ method.title }}</a>
+      <a href="{{ site.baseurl }}{{ method.url }}" class="ux-method">{{ method.title }}</a>
     {% endif %}
   {% endfor %}
   </div>

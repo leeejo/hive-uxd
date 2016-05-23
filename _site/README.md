@@ -31,11 +31,11 @@ View the site at [http://localhost:3000](http://localhost:3000).
 There are three npm scripts in package.json:
 ```
 "start": "gulp",
-"build": "jekyll build --config _config_dev.yml",
+"build": "jekyll build --config _config_deploy.yml",
 "deploy": "git subtree push --prefix _site origin gh-pages"
 ```
 
-Make sure to build using the development config file _config_dev.yml:
+Make sure to build using the development config file _config_deploy.yml:
 ```
 npm run build
 ```
