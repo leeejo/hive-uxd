@@ -16,7 +16,7 @@ const gulp  = require('gulp'),
 */
 
 let messages = {
-  jekyllBuild: '<span style="color: blue">Running:</span> $ jekyll build'
+  jekyllBuild: '<span style="color: blue">Running:</span> jekyll build'
 };
 
 gulp.task('browser-sync', ['sass', 'js', 'jekyll-build'], function() {
