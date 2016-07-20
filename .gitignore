@@ -37,11 +37,8 @@
 ehthumbs.db
 Thumbs.db
 
-.sass-cache
-.jekyll-metadata
-
-.bundle
-
+bower_components
+dist
 node_modules
 .babelrc
 .eslintrc
