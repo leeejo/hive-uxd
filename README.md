@@ -1,10 +1,10 @@
 # UXD framework for Singapore GDS
 
-This framework encompasses the entire UXD process we run at Hive.
+This framework encompasses the entire UXD process we run at Hive. The actual site can be viewed [here](http://edisonchee.github.io/hive-uxd/).
 
 ## Getting started
 
-First, fork this repo and clone it.
+First, fork this repo and clone it:
 
 ```
 git clone https://github.com/edisonchee/hive-uxd.git hive-uxd
@@ -18,11 +18,10 @@ Go into the project directory and grab dependencies:
 ```
 npm i
 ```
-update them:
+and update them:
 ```
 bower install
 ```
-
 Start up the server:
 ```
 foundation watch
@@ -39,12 +38,12 @@ There are three npm scripts in ```package.json```:
 "deploy": "git subtree push --prefix dist/ origin gh-pages"
 ```
 
-Build a compressed folder into ```dist```:
+Build and compress the site into the folder ```dist```:
 ```
 npm run build
 ```
 
-We'll push the ```dist``` folder as a subtree onto the gh-pages branch
+We'll then push the ```dist``` folder as a subtree onto the gh-pages branch:
 ```
 npm run deploy
 ```
