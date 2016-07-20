@@ -10,6 +10,10 @@ First, fork this repo and clone it.
 git clone https://github.com/edisonchee/hive-uxd.git hive-uxd
 ```
 
+Grab the [Foundation CLI](http://foundation.zurb.com/sites/docs/installation.html):
+```
+npm i -f foundation-cli
+```
 Go into the project directory and grab dependencies:
 ```
 npm i
@@ -28,14 +32,14 @@ View the site at [http://localhost:8000](http://localhost:8000).
 
 ## Deployment
 
-There are three npm scripts in package.json:
+There are three npm scripts in ```package.json```:
 ```
 "start": "gulp",
 "build": "gulp build --production",
-"deploy": "git subtree push --prefix dist origin gh-pages"
+"deploy": "git subtree push --prefix dist/ origin gh-pages"
 ```
 
-Build a compressed folder:
+Build a compressed folder into ```dist```:
 ```
 npm run build
 ```
