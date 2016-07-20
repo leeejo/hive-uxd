@@ -38,7 +38,6 @@ ehthumbs.db
 Thumbs.db
 
 bower_components
-dist
 node_modules
 .babelrc
 .eslintrc
