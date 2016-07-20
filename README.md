@@ -35,7 +35,7 @@ There are three npm scripts in ```package.json```:
 ```
 "start": "gulp",
 "build": "gulp build --production",
-"deploy": "git subtree push --prefix dist/ origin gh-pages"
+"deploy": "./deploy.sh"
 ```
 
 Build and compress the site into the folder ```dist```:
@@ -46,6 +46,11 @@ npm run build
 We'll then push the ```dist``` folder as a subtree onto the gh-pages branch:
 ```
 npm run deploy
+```
+
+If you get a 'Permission denied' error, try:
+```
+chmod +x deploy.sh
 ```
 
 ## Coding Style Guide

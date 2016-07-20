@@ -6,7 +6,7 @@
   "scripts": {
     "start": "gulp",
     "build": "gulp build --production",
-    "deploy": "git subtree push --prefix dist/ origin gh-pages"
+    "deploy": "./deploy.sh"
   },
   "author": "Edison Chee <edison_chee@ida.gov.sg>",
   "license": "MIT",
