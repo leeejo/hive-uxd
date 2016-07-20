@@ -1,63 +1,65 @@
-# UXD framework for Singapore GDS
+# ZURB Template
 
-This framework encompasses the entire UXD process we run at Hive.
+[![devDependency Status](https://david-dm.org/zurb/foundation-zurb-template/dev-status.svg)](https://david-dm.org/zurb/foundation-zurb-template#info=devDependencies)
 
-## Getting started
+**Please open all issues with this template on the main [Foundation for Sites](https://github.com/zurb/foundation-sites/issues) repo.**
 
-First, fork this repo and clone it.
+This is the official ZURB Template for use with [Foundation for Sites](http://foundation.zurb.com/sites). We use this template at ZURB to deliver static code to our clients. It has a Gulp-powered build system with these features:
 
-```
-git clone https://github.com/edisonchee/hive-uxd.git hive-uxd
-```
+- Handlebars HTML templates with Panini
+- Sass compilation and prefixing
+- JavaScript concatenation
+- Built-in BrowserSync server
+- For production builds:
+  - CSS compression
+  - JavaScript compression
+  - Image compression
 
-Go into the project directory and install gems:
-```
-bundle install
-```
-and grab all the Node dependencies:
-```
-npm i
-```
+## Installation
 
-Start up the server:
-```
-gulp
-```
+To use this template, your computer needs:
 
-View the site at [http://localhost:3000](http://localhost:3000).
+- [NodeJS](https://nodejs.org/en/) (0.12 or greater)
+- [Git](https://git-scm.com/)
 
-## Deployment
+This template can be installed with the Foundation CLI, or downloaded and set up manually.
 
-There are three npm scripts in package.json:
-```
-"start": "gulp",
-"build": "jekyll build --config _config_deploy.yml",
-"deploy": "git subtree push --prefix _site origin gh-pages"
+### Using the CLI
+
+Install the Foundation CLI with this command:
+
+```bash
+npm install foundation-cli --global
 ```
 
-Make sure to build using the development config file _config_deploy.yml:
-```
-npm run build
-```
+Use this command to set up a blank Foundation for Sites project with this template:
 
-We'll push the build folder as a subtree onto the gh-pages branch
-```
-npm run deploy
+```bash
+foundation new --framework sites --template zurb
 ```
 
-## Dev Environment
+The CLI will prompt you to give your project a name. The template will be downloaded into a folder with this name.
+
+### Manual Setup
+
+To manually set up the template, first download it with Git:
+
+```bash
+git clone https://github.com/zurb/foundation-zurb-template projectname
 ```
-Ruby 2.3.0
-Node 5.11.0
+
+Then open the folder in your command line, and install the needed dependencies:
+
+```bash
+cd projectname
+npm install
+bower install
 ```
-I recommend using [chruby](https://github.com/postmodern/chruby) and [n](https://github.com/tj/n) for managing versions.
 
-[Gulp](http://gulpjs.com) is our choice of a task runner for running a [Browsersync](https://www.browsersync.io) server (as a child process) and compiling the site.
+Finally, run `npm start` to run Gulp. Your finished site will be created in a folder called `dist`, viewable at this URL:
 
-## Coding Style Guide
+```
+http://localhost:8000
+```
 
-None at the moment. We write SASS and [ES2015](https://babeljs.io/docs/learn-es2015/) using [gulp-babel](https://www.npmjs.com/package/gulp-babel). If you're going to do a PR, just make sure your code is clean, readable and well-commented.
-
-## Contributing content
-
-Feel free to work on any of the pages and make a pull request when you're done. Most content are written in [MarkDown](https://guides.github.com/features/mastering-markdown/). You should be able to get by with basic syntax for headers and bullet lists.
+To create compressed, production-ready assets, run `npm run build`.
