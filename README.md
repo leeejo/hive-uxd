@@ -12,7 +12,7 @@ git clone https://github.com/edisonchee/hive-uxd.git hive-uxd
 
 Grab the [Foundation CLI](http://foundation.zurb.com/sites/docs/installation.html):
 ```
-npm i -f foundation-cli
+npm i -g foundation-cli
 ```
 Go into the project directory and grab dependencies:
 ```
